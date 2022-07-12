@@ -1,45 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Guess the number</title>
-      <link rel="stylesheet" href="styles/style.css" />
+	<head>
+	<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Guess the number</title>
+		<link rel="stylesheet" href="../styles/style.css" />
 
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap"
-         rel="stylesheet"
-      />
-   </head>
-   <body>
-      <section class="content">
-         <div class="top_section">
-            <h1>Guess the number!</h1>
-            <p class="range">(Number is between <b>1</b> and <b>10</b>)</p>
-         </div>
-         <div class="mid_section">
-            <p class="number">?</p>
-         </div>
-         <div class="bottom_section">
-            <form class="choosing">
-               <input type="number" id="user_num" placeholder="NUM" />
-               <button id="send" type="button">Choose</button>
-            </form>
-            <div class="results">
-               <p class="num_properties">Your num is: <span id="num_props">???</spanid></p>
-               <p class="score">Your score is <span id="score">10</span></p>
-               <p class="heigh_score">
-                  Your heigh score: <span id="high_score">0</span>
-               </p>
-               <form class="results_form">
-                  <button class="restart" type="button">Restart game</button>
-               </form>
-            </div>
-         </div>
-      </section>
-      <script src="scripts/script.js"></script>
-   </body>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<section class="content">
+			<button class="about">?</button>
+			<div class="aboutModal hidden">	
+				<button id="closeModal" class="modalCloser">✕</button>
+				<h2>How to play?</h2>
+				<p>In the left bottom side of the playing area enter the number(between 1 and 10) you think is guessed</p>
+				<p>Click "Choose" button and look at the right side.</p>
+				<p>If you guessed right you will understand it. If not, you would have a prompt - was this number bigger or smaller than guessed</p>
+				<p>Look at your score - each wrong step will decrease the score by one. Higher score - better result!</p>
+				<p style="text-align:center">Good luck!</p>
+			</div>
+			<div class="overlay hidden modalCloser"></div>
+			<div class="top_section">
+				<h1>Guess the number!</h1>
+				<p class="range">(Number is between <b>1</b> and <b>10</b>)</p>
+				<span> </span>
+			</div>
+			<div class="mid_section">
+				<p class="number">?</p>
+			</div>
+			<div class="bottom_section">
+				<form class="choosing">
+					<input type="number" id="user_num" placeholder="NUM" />
+					<button id="send" type="button">Choose</button>
+				</form>
+				<div class="results">
+					<p class="num_properties">Your num is: <span id="num_props">???</spanid></p>
+					<p class="score">Your score is <span id="score">10</span></p>
+					<p class="heigh_score">
+						Your heigh score: <span id="high_score">0</span>
+					</p>
+					<form class="results_form">
+						<button class="restart" type="button">Restart game</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<script src="../scripts/script.js"></script>
+	</body>
 </html>
