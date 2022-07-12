@@ -1,5 +1,21 @@
 'use strict';
 
+// Modal
+document.querySelector('.about').addEventListener('click', function () {
+	document.querySelector('.aboutModal').classList.remove('hidden');
+	document.querySelector('.overlay').classList.remove('hidden');
+});
+let closers = document.querySelectorAll('.modalCloser');
+console.log(closers);
+for (let i = 0; i < closers.length; i++) {
+	closers[i].addEventListener('click', function () {
+		document.querySelector('.aboutModal').classList.add('hidden');
+		document.querySelector('.overlay').classList.add('hidden');
+	});
+}
+document.querySelector;
+
+// Game logic
 function decreaseScore() {
 	score--;
 	document.querySelector('#score').textContent = score;
