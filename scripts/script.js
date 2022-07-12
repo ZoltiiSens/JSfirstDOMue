@@ -24,13 +24,10 @@ document.querySelector('#send').addEventListener('click', function () {
 	let user_number = Number(document.querySelector('#user_num').value);
 	if (score === 0) {
 		changeNumProps('you loose!');
-	} else if (!user_number || user_number > 10 || user_number < 1)
+	} else if (!user_number || user_number > 10 || user_number < 1) {
 		changeNumProps('out of range');
-	else if (user_number > num) {
-		changeNumProps('too high');
-		decreaseScore();
-	} else if (user_number < num) {
-		changeNumProps('too low');
+	} else if (user_number !== num) {
+		changeNumProps(user_number > num ? 'too high' : 'too low');
 		decreaseScore();
 	} else if (user_number === num) {
 		changeNumProps('correct!');
