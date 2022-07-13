@@ -194,6 +194,9 @@ body {
 		width: 40px;
 		height: 40px;
 	}
+	.aboutModal {
+		width: 80%;
+	}
 }
 
 @media screen and (max-width: 650px) {
@@ -225,60 +228,13 @@ body {
 		width: 100%;
 		text-align: center;
 	}
-	/* body {
-		display: block;
-	}
-	.content {
-		display: flex;
-		border: none;
-		height: auto;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		margin: 0;
-		padding: 0;
-		width: 100%;
-	}
-	.about {
-		background-color: rgba(0, 0, 0, 0);
-		font-size: 2em;
-		margin: 20px;
-		height: 40px;
-		width: 40px;
-		right: 0;
-	}
-	.aboutModal {
-		width: 300px;
-	}
-	.top_section {
-		margin: 20px;
-		height: auto;
-	}
-	.top_section h1 {
-		font-size: 1em;
-		margin-left: 0;
-	}
-	.top_section span {
-		display: block;
-	}
-	.top_section .range {
-		font-size: 0.6em;
-	}
-	.mid_section {
-		height: auto;
-		margin: 0 0 20px 0;
-	}
-	.bottom_section .results {
-		width: auto;
-		min-width: 267px;
-	}
-	.bottom_section .results .results_form {
-		display: block;
-	} */
 }
 @media screen and (max-width: 520px) {
 	.about {
 		text-decoration: underline;
+	}
+	.aboutModal p {
+		font-size: 0.7em;
 	}
 	.mid_section {
 		margin: 0;
