@@ -187,8 +187,45 @@ body {
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 780px) {
+	.about {
+		margin: 10px;
+		font-size: 2em;
+		width: 40px;
+		height: 40px;
+	}
+}
+
+@media screen and (max-width: 650px) {
 	body {
+		display: block;
+	}
+	.content {
+		width: 100%;
+		min-height: 100vh;
+		height: 100%;
+		border: none;
+	}
+	.top_section {
+		display: block;
+		width: 100%;
+		padding: 20px;
+	}
+	.top_section h1 {
+		display: block;
+		width: 100%;
+		margin: 10px;
+		padding: 0;
+		font-size: 2rem;
+		text-align: center;
+		max-width: 100%;
+	}
+	.top_section p {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	/* body {
 		display: block;
 	}
 	.content {
@@ -210,6 +247,9 @@ body {
 		width: 40px;
 		right: 0;
 	}
+	.aboutModal {
+		width: 300px;
+	}
 	.top_section {
 		margin: 20px;
 		height: auto;
@@ -230,10 +270,47 @@ body {
 	}
 	.bottom_section .results {
 		width: auto;
-		/* min-width: auto; */
 		min-width: 267px;
 	}
 	.bottom_section .results .results_form {
 		display: block;
+	} */
+}
+@media screen and (max-width: 520px) {
+	.about {
+		text-decoration: underline;
+	}
+	.mid_section {
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	.bottom_section {
+		display: block;
+	}
+	.bottom_section .choosing {
+		justify-content: space-around;
+		flex-direction: row;
+		align-items: center;
+	}
+	.bottom_section .choosing #send {
+		margin: 0;
+	}
+	.bottom_section .results {
+		align-items: center;
+	}
+}
+@media screen and (max-width: 370px) {
+	.bottom_section .choosing {
+		flex-direction: column;
+	}
+	.choosing * {
+		margin: 5px;
+	}
+}
+@media screen and (max-width: 270px) {
+	.number {
+		width: 150px;
+		height: 150px;
+		font-size: 6em;
 	}
 }
